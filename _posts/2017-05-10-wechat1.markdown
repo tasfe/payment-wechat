@@ -1,10 +1,10 @@
-﻿---  
-layout:     post  
+﻿---
+layout:     post
 title:      "聊天记录整理-2017-05-10"  
 date:       2017-05-10 12:00:00  
 author:     "PaymentGroup"  
 header-img: "img/post-bg-wechat.jpg"  
----  
+---
   
 2017-05-05 14:37:02	Joker	现在支付这一行业做烂了么？我公司要卖原代码了??    
 2017-05-05 14:38:32	李晓勇-网银架构师	你们公司要倒闭了？    
