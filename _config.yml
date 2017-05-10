@@ -1,11 +1,11 @@
 # Site settings
-title: 凤凰牌老熊
-SEOTitle: 凤凰牌老熊的博客 | Shamphone Blog
+title: 支付产品技术交流记录
+SEOTitle: 支付产品技术交流记录 | Payment Blog
 header-img: img/home-bg.jpg
 email: shamphone@gmail.com
 description: "Java开发、软件架构、大数据、FinTech、互联网金融，知行合一。"
 keyword: "Java开发，软件架构，大数据，FinTech，互联网金融，知行合一"
-url: "https://blog.lixf.cn"              # your host, for absolute URL
+url: "https://wechat.lixf.cn"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 encoding: UTF-8
 
