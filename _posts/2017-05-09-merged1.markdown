@@ -606,8 +606,8 @@ AT、非AT的支付公司、非支付公司这3类公司，得做到什么规模
   
   ## 附： 未整理的聊天记录
 
-- [2017-05-05] (http://wechat.lixf.cn/2017/05/05/wechat1/)  
-- [2017-05-06] (http://wechat.lixf.cn/2017/05/06/wechat2/)  
-- [2017-05-07] (http://wechat.lixf.cn/2017/05/07/wechat3/)  
-- [2017-05-08] (http://wechat.lixf.cn/2017/05/08/wechat4/)  
-- [2017-05-09] (http://wechat.lixf.cn/2017/05/09/wechat5/)  
+- [2017-05-05](http://wechat.lixf.cn/2017/05/05/wechat1/)  
+- [2017-05-06](http://wechat.lixf.cn/2017/05/06/wechat2/)  
+- [2017-05-07](http://wechat.lixf.cn/2017/05/07/wechat3/)  
+- [2017-05-08](http://wechat.lixf.cn/2017/05/08/wechat4/)  
+- [2017-05-09](http://wechat.lixf.cn/2017/05/09/wechat5/)  
