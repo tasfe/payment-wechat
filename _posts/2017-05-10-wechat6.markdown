@@ -1,10 +1,10 @@
 ---  
-   layout:     post  
-   title:      "聊天记录2017-05-10未整理版"    
-   date:       2017-05-10 12:00:00    
-   author:     "PaymentGroup"    
-   header-img: "img/post-bg-wechat.jpg"    
- ---  
+layout:     post  
+title:      "聊天记录2017-05-10未整理版"    
+date:       2017-05-10 12:00:00    
+author:     "PaymentGroup"    
+header-img: "img/post-bg-wechat.jpg"    
+---  
    
    9:18:08	今天是讨论风控吧
    9:54:13	那我小白先问一个风控的问题：互联网支付公司的风控数据 需要分哪几部分采集？
