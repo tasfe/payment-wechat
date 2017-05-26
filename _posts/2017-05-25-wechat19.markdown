@@ -163,7 +163,10 @@ A：无回应
 A:可以脚本动态计算;
 
 ```javascript
-#if((($time>=2350 || $time<=0050) && $targetInst=='CMB') || (($time>=2030 || $time<=0300) && $targetInst=='PSBC')) 50#elseif($partnerId == '200002394692'|| $partnerId == '200002394691') 200#else 130#end
+ #if((($time>=2350 || $time<=0050) && $targetInst=='CMB') || (($time>=2030 || $time<=0300) && $targetInst=='PSBC')) 50
+  #elseif($partnerId == '200002394692'|| $partnerId == '200002394691') 200
+  #else 130
+ #end
 ```
 
 权重主要用来分配流量的，多个通道都要分点量。。  
@@ -264,7 +267,7 @@ A2：按照常规P2P虚拟账户类型的应该是不算入余额的 不过 我�
 **Q：这边谁有最新的卡bin 表，可以分享下吗/是否有支付公司 或银行 有没有可以查询一个银行卡的开户行 和 开户行联行号的接口？**  
 >因为我们有个场景是需要用户选 自己卡的 开户行。 但是我们的联行号表不全，很多银行选不出来。  
   
-A1：https://www.hebbank.com/corporbank/otherBankQueryWeb.do 这个可以查  
+A1：[这个可以查](https://www.hebbank.com/corporbank/otherBankQueryWeb.do)  
   
 A2:卡号作为收款卡号，做代付的时候，一般代付接口都需要开户所在省市 或 联行号。但是查不出一张卡的开户行  
   
