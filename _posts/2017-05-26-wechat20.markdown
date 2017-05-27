@@ -6,7 +6,7 @@ author:     "PaymentGroup"
 header-img: "img/post-bg-wechat.jpg"                                     
 ---                         
       
-> 本文档从“支付产品技术交流群”的2017年5月25日聊天记录整理出来，感谢@happycoral 同学的整理工作。       
+> 本文档从“支付产品技术交流群”的2017年5月26日聊天记录整理出来，感谢@happycoral 同学的整理工作。       
   
 ## 一、	主题分享：支付账务系统设计  
   
