@@ -1,9 +1,9 @@
 ---                                       
-layout:     post          
-title:      "20170601交流记录和专题"                                         
-date:       2017-06-01 12:00:00                                         
-author:     "PaymentGroup"                                         
-header-img: "img/post-bg-wechat.jpg"                                         
+layout:     post
+title:      "20170601交流记录和专题"
+date:       2017-06-01 12:00:00                                    
+author:     "PaymentGroup"                                    
+header-img: "img/post-bg-wechat.jpg"
 ---                             
   
 ## 一、专题分享:基金代销系统  
