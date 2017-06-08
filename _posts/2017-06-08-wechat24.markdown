@@ -1,12 +1,12 @@
 ---                                   
 layout:     post      
-title:      "20170608-银行帐户和能力输出"                                     
+title:      "20170608-支付数据分析"                                     
 date:       2017-06-08 12:00:00                                     
 author:     "PaymentGroup"                                     
 header-img: "img/post-bg-wechat.jpg"                                     
 ---   
 
-## 一、 专题分享
+## 一、 专题分享-支付数据分析
 > 分享内容涉及行内敏感信息，应分享者要求不对外公开。
 
 ## 二、 话题整理
