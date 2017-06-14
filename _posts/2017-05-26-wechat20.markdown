@@ -1,6 +1,6 @@
 ---                                   
 layout:     post      
-title:      "20170526交流记录和专题"                                     
+title:      "20170526-支付账务系统设计"                                     
 date:       2017-05-26 12:00:00                                     
 author:     "PaymentGroup"                                     
 header-img: "img/post-bg-wechat.jpg"                                     
