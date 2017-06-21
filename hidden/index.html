@@ -5,7 +5,7 @@ description: "天道酬勤，知行合一"
 header-img: "img/about-lixf.jpg"
 ---
 
-{% for post in site.categories.hidden %}
+{% for post in site.posts where: 'category','hidden' %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
