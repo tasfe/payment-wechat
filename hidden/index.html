@@ -6,6 +6,7 @@ header-img: "img/about-lixf.jpg"
 ---
 
 {% for post in site.posts.uncategorized %}
+ {% if post.category != hidden %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
@@ -25,6 +26,7 @@ header-img: "img/about-lixf.jpg"
     </p>
 </div>
 <hr>
+{% endif %}
 {% endfor %}
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
