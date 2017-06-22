@@ -4,22 +4,26 @@ import os
 import time
 import sys
 
+
 reload(sys) 
 sys.setdefaultencoding('utf8')
+
+import codecs
+
 thedate = '2017-06-22'
 
 inpath = 'D:/iphone/微信消息记录-李雄峰的 iPhone/201706221700-李雄峰/表格格式/支付产品技术交流群.xls'
 unpath = unicode(inpath, "utf8")
 source=open(unpath)
-target = open('D:/github/payment-wechat/wechat/_posts/'+thedate+'-chat.markdown', 'w')
-target.write('---\n')              
-target.write('layout:     post \n')                        
-target.write('title:      "'+thedate+'-WeChat\n')
-target.write('date:       '+ thedate+' 12:00:00\n')
-target.write('author:     "PaymentGroup"\n')   
-target.write('tag:		  [chat]\n')   
-target.write('header-img: "img/post-bg-wechat.jpg"\n')                           
-target.write('---\n')              
+target = codecs.open(r'D:/github/payment-wechat/wechat/_posts/'+thedate+'-chat.markdown', 'w', encoding = 'utf-8', errors='ignore')
+target.write(u'---\n')              
+target.write(u'layout:     post \n')                        
+target.write(u'title:      "'+thedate+'-WeChat\n')
+target.write(u'date:       '+ thedate+' 12:00:00\n')
+target.write(u'author:     "PaymentGroup"\n')   
+target.write(u'tag:		  [chat]\n')   
+target.write(u'header-img: "img/post-bg-wechat.jpg"\n')                           
+target.write(u'---\n')              
 
 
 try:
@@ -50,8 +54,19 @@ try:
 			msg = line[pos_start:pos_end]
 
 			if date == thedate:
-				target.write('> '+ time +'  ' + name + '   '+ wechat_no+ '  '+action + '   '+ msgtype + '  \n')
-				target.write(msg + '  \n')
+				target.write(u'> ')
+				target.write(time)
+				target.write(u'  ')
+				target.write(name.decode('gbk', errors='ignore').encode('utf-8'))
+				target.write(u'   ')
+				target.write(wechat_no.decode('gbk', errors='ignore').encode('utf-8'))
+				target.write('  ')				
+				target.write(action.decode('gbk', errors='ignore').encode('utf-8'))
+				target.write('   ')
+				target.write(msgtype.decode('gbk', errors='ignore').encode('utf-8'))
+				target.write(u'  \n')
+				
+				target.write(msg.decode('gbk', errors='ignore').encode('utf-8') + u'  \n')
 finally:
      source.close()
 
