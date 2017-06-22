@@ -11,7 +11,7 @@ thedate = '2017-06-22'
 inpath = 'D:/iphone/微信消息记录-李雄峰的 iPhone/201706221700-李雄峰/表格格式/支付产品技术交流群.xls'
 unpath = unicode(inpath, "utf8")
 source=open(unpath)
-target = open('D:/github/payment-wechat/chat/_posts/'+thedate+'-chat.markdown', 'w')
+target = open('D:/github/payment-wechat/wechat/_posts/'+thedate+'-chat.markdown', 'w')
 target.write('---\n')              
 target.write('layout:     post \n')                        
 target.write('title:      "'+thedate+'-WeChat\n')
