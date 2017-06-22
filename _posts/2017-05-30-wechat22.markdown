@@ -2,7 +2,8 @@
 layout:     post        
 title:      "20170531-敏捷开发实践"                                       
 date:       2017-05-31 12:00:00                                       
-author:     "PaymentGroup"                                       
+author:     "PaymentGroup"                 
+tag:		[publish]   
 header-img: "img/post-bg-wechat.jpg"                                       
 ---                           
   

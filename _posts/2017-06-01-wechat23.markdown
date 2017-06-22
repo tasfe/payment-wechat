@@ -2,7 +2,8 @@
 layout:     post
 title:      "20170601-基金代销系统"
 date:       2017-06-01 12:00:00                                    
-author:     "PaymentGroup"                                    
+author:     "PaymentGroup"                 
+tag:		[publish]   
 header-img: "img/post-bg-wechat.jpg"
 ---                             
   

@@ -2,7 +2,8 @@
 layout:     post    
 title:      "20170525- 渠道管理和渠道接入"                                   
 date:       2017-05-25 12:00:00                                   
-author:     "PaymentGroup"                                   
+author:     "PaymentGroup"            
+tag:		[publish]   
 header-img: "img/post-bg-wechat.jpg"                                   
 ---                       
     

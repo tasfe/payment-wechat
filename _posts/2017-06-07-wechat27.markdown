@@ -2,7 +2,8 @@
 layout:     post        
 title:      "20170607-有赞支付架构"                                       
 date:       2017-06-07 19:00:00                                       
-author:     "PaymentGroup"                                       
+author:     "PaymentGroup"       
+tag:		[publish]   
 header-img: "img/post-bg-wechat.jpg"                                       
 ---     
 > 有赞支付是6月8日的分享，由于7日无主题分享，整理后，博主决定将8日的分享放到7日提前发出来。 8日还有一个临时加进来的主题分享，敬请关注。 

@@ -2,7 +2,8 @@
 layout:     post      
 title:      "20170602-银行帐户和能力输出"                                     
 date:       2017-06-02 12:00:00                                     
-author:     "PaymentGroup"                                     
+author:     "PaymentGroup"               
+tag:		[publish]   
 header-img: "img/post-bg-wechat.jpg"                                     
 ---                         
       

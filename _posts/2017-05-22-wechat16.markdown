@@ -2,7 +2,8 @@
 layout:     post                             
 title:      "20170522交流记录和专题"                               
 date:       2017-05-22 12:00:00                               
-author:     "PaymentGroup"                               
+author:     "PaymentGroup"                
+tag:		[publish]   
 header-img: "img/post-bg-wechat.jpg"                               
 ---                   
 

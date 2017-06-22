@@ -3,6 +3,7 @@ layout:     post
 title:       "20170512-预付卡、聚合支付、供应链金融"                  
 date:       2017-05-12 19:00:00                
 author:     "PaymentGroup"                
+tag:		[publish]   
 header-img: "img/post-bg-wechat.jpg"                
 ---              
    

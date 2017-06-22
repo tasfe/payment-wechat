@@ -2,7 +2,8 @@
 layout:     post  
 title:      "2017-05-09聊天记录整理版"    
 date:        2017-05-09  20:00:00    
-author:     "PaymentGroup"    
+author:     "PaymentGroup"   
+tag:		[publish]   
 header-img: "img/post-bg-wechat.jpg"    
 ---  
 

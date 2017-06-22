@@ -2,7 +2,8 @@
 layout:     post                             
 title:      "微信聊天记录整理指南"                               
 date:       2017-05-20 12:00:00                               
-author:     "PaymentGroup"                               
+author:     "PaymentGroup"                      
+tag:		[publish]   
 header-img: "img/post-bg-wechat.jpg"                               
 ---                   
 

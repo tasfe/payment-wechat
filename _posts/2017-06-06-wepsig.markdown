@@ -2,7 +2,8 @@
 layout:     post      
 title:      "建立支付技术交流群WebPaymentSIG"                                     
 date:       2017-06-06 12:00:00                                     
-author:     "PaymentGroup"                                     
+author:     "PaymentGroup"              
+tag:		[publish]   
 header-img: "img/post-bg-wechat.jpg"                                     
 ---                         
       
