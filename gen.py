@@ -64,9 +64,9 @@ try:
 				target.write(action.decode('gbk', errors='ignore').encode('utf-8'))
 				target.write('   ')
 				target.write(msgtype.decode('gbk', errors='ignore').encode('utf-8'))
-				target.write(u'  \n')
+				target.write(u'  \n   \n')
 				
-				target.write(msg.decode('gbk', errors='ignore').encode('utf-8') + u'  \n')
+				target.write(msg.decode('gbk', errors='ignore').encode('utf-8') + u'  \n   \n')
 finally:
      source.close()
 
