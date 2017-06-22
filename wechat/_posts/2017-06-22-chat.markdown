@@ -1,12 +1,11 @@
 ---
 layout:     post 
-title:      "2017-06-22-WeChat
+title:      "2017-06-22-WeChat"
 date:       2017-06-22 12:00:00
 author:     "PaymentGroup"
 tag:		  [chat]
 header-img: "img/post-bg-wechat.jpg"
 ---
-
 > 00:15:26  david-橙子支付-技术总监   weigphf  接收   文本  
 发卡行可以可以查到pos机上所有的交易吗？@龚晓冬-银商账户-产品-上海?  
 > 06:41:20  韩财光   wxid_xw9sufimxojk21  接收   文本  
