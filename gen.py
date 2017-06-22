@@ -34,7 +34,7 @@ try:
 			time = line[244:252]
 			
 			pos_end = line.find('</td>', 335)
-			name = line[335: pos_end]
+			name = line[335: pos_end].decode('gbk', errors='ignore').encode('utf-8')
 			
 
 			pos_start = line.find('x:str>', pos_end+5) + 6
@@ -43,30 +43,46 @@ try:
 			
 			pos_start = line.find('x:str>', pos_end+5) + 6
 			pos_end = line.find('</td>', pos_start)
-			action = line[pos_start:pos_end]
+			action = line[pos_start:pos_end].decode('gbk', errors='ignore').encode('utf-8')
 
 			pos_start = line.find('x:str>', pos_end+5) + 6
 			pos_end = line.find('</td>', pos_start)
-			msgtype = line[pos_start:pos_end]
+			msgtype = line[pos_start:pos_end].decode('gbk', errors='ignore').encode('utf-8')
 
 			pos_start = line.find('x:str>', pos_end+5) + 6
 			pos_end = line.find('</td>', pos_start)
-			msg = line[pos_start:pos_end]
+			msg = line[pos_start:pos_end].decode('gbk', errors='ignore').encode('utf-8')
 
-			if date == thedate:
+			if date == thedate and msgtype == u'文本':
 				target.write(u'> ')
 				target.write(time)
 				target.write(u'  ')
-				target.write(name.decode('gbk', errors='ignore').encode('utf-8'))
-				target.write(u'   ')
-				target.write(wechat_no.decode('gbk', errors='ignore').encode('utf-8'))
-				target.write('  ')				
-				target.write(action.decode('gbk', errors='ignore').encode('utf-8'))
-				target.write('   ')
-				target.write(msgtype.decode('gbk', errors='ignore').encode('utf-8'))
+				target.write(name)
+				# target.write(u'   ')
+				# target.write(wechat_no.decode('gbk', errors='ignore').encode('utf-8'))
+				# target.write('  ')				
+				# target.write(action.decode('gbk', errors='ignore').encode('utf-8'))
+				# target.write('   ')
+				# target.write(msgtype.decode('gbk', errors='ignore').encode('utf-8'))
 				target.write(u'  \n   \n')
 				
-				target.write(msg.decode('gbk', errors='ignore').encode('utf-8') + u'  \n   \n')
+				target.write(msg + u'  \n   \n')
+
+			if date == thedate and msgtype == unicode('照片壁纸','utf8'):
+				target.write(u'> ')
+				target.write(time)
+				target.write(u'  ')
+				target.write(name)
+				# target.write(u'   ')
+				# target.write(wechat_no.decode('gbk', errors='ignore').encode('utf-8'))
+				# target.write('  ')				
+				# target.write(action.decode('gbk', errors='ignore').encode('utf-8'))
+				# target.write('   ')
+				# target.write(msgtype.decode('gbk', errors='ignore').encode('utf-8'))
+				target.write(u'  \n   \n')
+				
+				target.write('!['+ datetime + '](http://wechat.lixf.cn/img/'+ date.replace('-', '')+'_'+ time.replace(':','') + '.png' + ') \n   \n')
+
 finally:
      source.close()
 
