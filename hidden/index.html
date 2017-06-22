@@ -1,12 +1,14 @@
 ---
-layout: category
-title: "隐藏目录"
-description: "天道酬勤，知行合一"
-header-img: "img/about-lixf.jpg"
+layout: page
+description: "隐藏目录"
 ---
 
 {% for post in site.posts %}
- {% if post.category == site.categories.hidden %}
+	{% assign  display = false  %}
+		{% for tag in post.tags %}
+			{% if(tag == "hidden") %} {% assign display = true %}  {%endif %}
+		{% endfor %}
+	{% if display %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
@@ -26,8 +28,9 @@ header-img: "img/about-lixf.jpg"
     </p>
 </div>
 <hr>
-  {% endif %}
+	{% endif %}
 {% endfor %}
+
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
 <ul class="pager">
