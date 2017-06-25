@@ -72,10 +72,21 @@ try:
 				# target.write(action.decode('gbk', errors='ignore').encode('utf-8'))
 				# target.write('   ')
 				# target.write(msgtype.decode('gbk', errors='ignore').encode('utf-8'))
-				target.write(u'  \n   \n')
-				
+				target.write(u'  \n   \n')				
 				target.write(msg + u'  \n   \n')
-
+			if date == thedate and msgtype == u'网页':
+				target.write(u'> ')
+				target.write(time)
+				target.write(u'  ')
+				target.write(name)
+				# target.write(u'   ')
+				# target.write(wechat_no.decode('gbk', errors='ignore').encode('utf-8'))
+				# target.write('  ')				
+				# target.write(action.decode('gbk', errors='ignore').encode('utf-8'))
+				# target.write('   ')
+				# target.write(msgtype.decode('gbk', errors='ignore').encode('utf-8'))
+				target.write(u'  \n   \n')				
+				target.write(msg + u'  \n   \n')
 			if date == thedate and msgtype == unicode('照片壁纸','utf8'):
 				target.write(u'> ')
 				target.write(time)
