@@ -1,7 +1,7 @@
 ---                                               
 layout:     post                  
-title:      "20170624-扫码聚合支付"                                                 
-date:       2017-06-24 19:00:00                                                 
+title:      "20170622-二三类账户解析"                                                 
+date:       2017-06-22 19:00:00                                                 
 author:     "PaymentGroup"            
 tag:		[hidden]      
 header-img: "img/post-bg-wechat.jpg"           
