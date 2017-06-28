@@ -1,8 +1,0 @@
----
-layout:     post 
-title:      "2016-06-24-WeChat"
-date:       2016-06-24 12:00:00
-author:     "PaymentGroup"
-tag:		  [chat]
-header-img: "img/post-bg-wechat.jpg"
----
