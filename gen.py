@@ -16,7 +16,7 @@ if len(sys.argv) < 2 :
 
 thedate = sys.argv[1] 
 
-inpath = 'D:/iphone/微信消息记录-李雄峰的 iPhone/201707022337-李雄峰/表格格式/支付产品技术交流群.xls'
+inpath = 'D:/iphone/微信消息记录-李雄峰的 iPhone/201707050901-李雄峰/表格格式/支付产品技术交流群.xls'
 
 print('使用文件'+ inpath +'\n')
 print('请注意输入最新的文件路径\n')
