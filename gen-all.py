@@ -3,7 +3,7 @@ import re
 import os
 import time
 import sys
-
+import cgi
 
 reload(sys) 
 sys.setdefaultencoding('utf8')
@@ -82,7 +82,7 @@ try:
 
 			pos_start = line.find('x:str>', pos_end+5) + 6
 			pos_end = line.find('</td>', pos_start)
-			msg = line[pos_start:pos_end].decode('gbk', errors='ignore').encode('utf-8')
+			msg = cgi.escape(line[pos_start:pos_end]).decode('gbk', errors='ignore').encode('utf-8')
 
 			if msgtype == u'文本':
 				target.write(u'> ')
