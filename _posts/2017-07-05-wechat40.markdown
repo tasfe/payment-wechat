@@ -3,7 +3,7 @@ layout:     post
 title:      "20170705-消息系统选型等"                                                   
 date:       2017-07-05 19:00:00                                                   
 author:     "PaymentGroup"              
-tag:		[hidden]        
+tag:		[publish]        
 header-img: "img/post-bg-wechat.jpg"             
 --- 
 
