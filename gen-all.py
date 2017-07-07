@@ -10,13 +10,7 @@ sys.setdefaultencoding('utf8')
 
 import codecs
 
-if len(sys.argv) < 2 :
-  print('python gen.py 2017-06-21')
-  sys.exit()
-
-thedate = sys.argv[1] 
-
-## 导出路径
+## 导出原始excel文件所在的路径
 root_path = u'D:/iphone/微信消息记录-李雄峰的 iPhone/'
 
 ## 最新的文件路径
@@ -35,16 +29,23 @@ unpath = root_path + last_folder + sub_path
 
 print('使用最新文件: '+ unpath +'\n')
 
-## unpath = unicode(inpath, "utf8")
+## 解析最近时间
+last_date = time.strptime(last_folder[0:12], '%Y%m%d%H%M')
+
+
+## 目标路径
+dest_path = 'D:/github/payment-wechat/merged/_posts/' + time.strftime("%Y-%m-%d", last_date) + '-merged.markdown'
+
+print('目标文件: '+ dest_path +'\n')
 
 source=open(unpath)
-target = codecs.open(r'D:/github/payment-wechat/wechat/_posts/'+thedate+'-chat.markdown', 'w', encoding = 'utf-8', errors='ignore')
+target = codecs.open(dest_path, 'w', encoding = 'utf-8', errors='ignore')
 target.write(u'---\n')              
 target.write(u'layout:     post \n')                        
-target.write(u'title:      "'+thedate+'-WeChat"\n')
-target.write(u'date:       '+ thedate+' 12:00:00\n')
+target.write(u'title:      "'+ time.strftime("%Y-%m-%d", last_date) +'-WeChat"\n')
+target.write(u'date:       '+  time.strftime("%Y-%m-%d %H:%M", last_date) +':00\n')
 target.write(u'author:     "PaymentGroup"\n')   
-target.write(u'tag:		  [chat]\n')   
+target.write(u'tag:		  [merged]\n')   
 target.write(u'header-img: "img/post-bg-wechat.jpg"\n')                           
 target.write(u'---\n')              
 
@@ -76,7 +77,7 @@ try:
 			pos_end = line.find('</td>', pos_start)
 			msg = line[pos_start:pos_end].decode('gbk', errors='ignore').encode('utf-8')
 
-			if date == thedate and msgtype == u'文本':
+			if msgtype == u'文本':
 				target.write(u'> ')
 				target.write(time)
 				target.write(u'  ')
@@ -89,7 +90,7 @@ try:
 				# target.write(msgtype.decode('gbk', errors='ignore').encode('utf-8'))
 				target.write(u'  \n   \n')				
 				target.write(msg + u'  \n   \n')
-			if date == thedate and msgtype == u'网页':
+			if msgtype == u'网页':
 				target.write(u'> ')
 				target.write(time)
 				target.write(u'  ')
@@ -102,7 +103,7 @@ try:
 				# target.write(msgtype.decode('gbk', errors='ignore').encode('utf-8'))
 				target.write(u'  \n   \n')				
 				target.write(msg + u'  \n   \n')
-			if date == thedate and msgtype == unicode('照片壁纸','utf8'):
+			if msgtype == unicode('照片壁纸','utf8'):
 				target.write(u'> ')
 				target.write(time)
 				target.write(u'  ')
