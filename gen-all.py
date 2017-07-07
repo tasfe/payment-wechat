@@ -79,7 +79,7 @@ try:
 
 			if msgtype == u'文本':
 				target.write(u'> ')
-				target.write(time)
+				target.write(datetime)
 				target.write(u'  ')
 				target.write(name)
 				# target.write(u'   ')
@@ -92,7 +92,7 @@ try:
 				target.write(msg + u'  \n   \n')
 			if msgtype == u'网页':
 				target.write(u'> ')
-				target.write(time)
+				target.write(datetime)
 				target.write(u'  ')
 				target.write(name)
 				# target.write(u'   ')
@@ -105,7 +105,7 @@ try:
 				target.write(msg + u'  \n   \n')
 			if msgtype == unicode('照片壁纸','utf8'):
 				target.write(u'> ')
-				target.write(time)
+				target.write(datetime)
 				target.write(u'  ')
 				target.write(name)
 				# target.write(u'   ')
@@ -124,4 +124,4 @@ finally:
 target.flush()
 target.close()
 
-print('完成导出：'+ unpath +'\n')
+print('完成导出：'+ unpath +' 到 ' + dest_path + '\n')
