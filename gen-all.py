@@ -49,6 +49,8 @@ target.write(u'tag:		  [merged]\n')
 target.write(u'header-img: "img/post-bg-wechat.jpg"\n')                           
 target.write(u'---\n')              
 
+## 当前日期
+cur_date = ''
 
 try:
 	for line in source:
@@ -57,6 +59,11 @@ try:
 			date = line[233:243]
 			time = line[244:252]
 			
+			if date!=cur_date:
+				cur_date = date 
+				target.write(u'## ' + cur_date + '   \n')
+				
+
 			pos_end = line.find('</td>', 335)
 			name = line[335: pos_end].decode('gbk', errors='ignore').encode('utf-8')
 			
