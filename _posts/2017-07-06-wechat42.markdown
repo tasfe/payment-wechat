@@ -160,7 +160,7 @@ A：是的，原理是这样的，我没具体实施过，不会重复执行，�
   
 Q：是的，对照备中心的最近更新时间，当然不能重复执行，要做到完美难度应该很大；假设并发一万，延时100ms，那也会有至少上千个请求会产生差异  
   
-A：这个问题技术分享过 记不清了 大家自己看文章找灵感吧 [京东金石系统 | 多中心高可用的交易系统](https://mp.weixin.qq.com/s?__biz=MzI0MDc5NzQ2MQ==&mid=2247484109&idx=1&sn=a4df52df1465b9c1807dd7f7a022b37f&chksm=e91410b7de6399a1bf09a486ef6d44d59273a2b587c9d1399f2e1634456717323a57a59b02b8&mpshare=1&scene=1&srcid=0622OUgiI55YQpM3c9S7wuC8#rd)  
+A：这个问题技术分享过 记不清了 大家自己看文章找灵感吧 [京东金石系统-多中心高可用的交易系统](https://mp.weixin.qq.com/s?__biz=MzI0MDc5NzQ2MQ==&mid=2247484109&idx=1&sn=a4df52df1465b9c1807dd7f7a022b37f&chksm=e91410b7de6399a1bf09a486ef6d44d59273a2b587c9d1399f2e1634456717323a57a59b02b8&mpshare=1&scene=1&srcid=0622OUgiI55YQpM3c9S7wuC8#rd)  
   
 ## 三. 话题整理  
 ### 3.1 上期分享的作业  
