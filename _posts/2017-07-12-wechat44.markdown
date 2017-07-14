@@ -7,7 +7,7 @@ tag:		[publish]
 header-img: "img/post-bg-wechat.jpg"                     
 ---         
   
-##主题一： 卡bin  
+## 主题一： 卡bin  
   
 [银联2017最新卡bin表](http://wechat.lixf.cn/attach/BIN20170512.xls)  
   
